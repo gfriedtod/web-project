@@ -25,7 +25,7 @@
 
 
     <app-boutton-nav-bar  [ngStyle]="{ transition: 'transform 0.5s easy-in-out',
-                                      transform : 'translateX('+index+'%)',}"  (click)="onSnap(boutton.imageUrl , boutton.subtitle ,boutton.state)" *ngFor="let boutton of boutons" [bouttonModel]="boutton" ></app-boutton-nav-bar>
+                                      transform : 'translateX('+index+'%)',}"  (click)="onSnap(boutton.imageUrl , boutton.subtitle )" *ngFor="let boutton of boutons" [bouttonModel]="boutton" ></app-boutton-nav-bar>
 
   </div>
 
