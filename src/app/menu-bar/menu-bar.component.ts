@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {BouttonNavBarComponent} from "../boutton-nav-bar/boutton-nav-bar.component";
+
 import {EventModel} from "../model/Event-model";
 import { trigger, transition, style, animate } from '@angular/animations';
-import {ExternalExpr} from "@angular/compiler";
+
 
 // @ts-ignore
 @Component({
@@ -84,7 +84,7 @@ export class MenuBarComponent implements  OnInit{
   }
 
 
-  onSnap(imageUrl: string, subtitle: string, state: any) {
+  onSnap(imageUrl: string, subtitle: string) {
     this.state+=1
     this.imageUrl =  imageUrl
     this.dim =subtitle
@@ -112,20 +112,5 @@ export class MenuBarComponent implements  OnInit{
     // this.index--
   }
 
-  protected readonly transition = transition;
 
-  goLeftpress() {
-
-    // while (true){
-    //   try {
-    //     this.index=(this.index-20)
-    //     console.log(this.index)
-    //   } catch (e){
-    //     console.log(e)
-    //     break
-    //   }
-    //
-    // }
-
-  }
 }
