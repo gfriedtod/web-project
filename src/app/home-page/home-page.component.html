@@ -1,0 +1,81 @@
+<!--<header>-->
+
+<!--<div class="blur"></div>-->
+<!--</header>-->
+
+<main>
+  <img class="main-im" [src]="sub_im" alt="">
+  <!--  -->
+  <div class="mg-comtain"  *ngFor="let im  of image let i = index" >
+    <img  [@carossel]="index" *ngIf="i===index" [src]="im.image" alt="">
+  </div>
+  <div class="main-contains">
+<!--    <div @carossel class="menu">-->
+
+<!--    </div>-->
+    <section class="contain"  >
+      <h3>Cojecam</h3>
+      <div class="description">
+        <ng-container *ngFor="let text of image let i = index">
+          <h1 @fade-text *ngIf="i==index">{{ text.title }}</h1>
+          <h2 @fade-text-des *ngIf="i==index">{{ text.text }}</h2>
+        </ng-container>
+      </div>
+
+
+
+      <div @carossel class="nav-boutton">
+        <div (click)="goLeft()" class="nav-b left"><</div>
+        <div (click)="goRigth()" class="nav-b rigth"> > </div>
+      </div>
+    </section>
+    <section @fade-left-contain  class="sub-contain">
+
+      <div @fade-left-item1 class="item1">
+        <div *ngFor="let im of sub_ims let i=index" class="el">
+          <div  class="grid">
+            <div @fade-left-item1 class="sub-nav">
+              <div class="bubble-nav"> <div [@bub-style]="index"  class="bub"></div> </div>
+              <div class="bubble-nav"></div>
+              <div class="bubble-nav"></div>
+            </div>
+          </div>
+          <img @carossel *ngIf="i==index" [src]="im.image" alt="">
+        </div>
+
+        <!--      <owl-carousel-o [options]="carouselOptions">-->
+        <!--        <ng-container *ngFor="let item of items">-->
+        <!--          <img [src]="item.image" alt="{{item.title}}">-->
+        <!--        </ng-container>-->
+        <!--      </owl-carousel-o>-->
+        <!--      <mat-carousel>-->
+        <!--        <ng-container *ngFor="let image of items">-->
+        <!--          <img mat-card-image [src]="image.image" [alt]="image.title">-->
+        <!--        </ng-container>-->
+        <!--      </mat-carousel>-->
+
+        <!--      <ngx-slick-carousel class="carousel" >-->
+        <!--        <div *ngFor="let slide of items" class="slide">-->
+        <!--          <img [src]="slide.image" alt="{{ slide.title }}">-->
+        <!--          <h3>{{ slide.title }}</h3>-->
+        <!--        </div>-->
+        <!--      </ngx-slick-carousel>-->
+      </div>
+      <div @fade-left-item2  class="item2">
+        <div *ngFor="let im of items let i=index" class="ele">
+          <div (mouseover)="scalein()" (mouseleave)="scaleout()" class="grid2">
+            <h1>View Project   +</h1>
+          </div>
+          <img [ngStyle]="{transform :'scale('+state+')'}"  @carossely *ngIf="i==index" [src]="im.image" alt="">
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+</main>
+
+<app-menu-option></app-menu-option>
+
+

@@ -1,0 +1,34 @@
+
+<div class="nav">
+  <!--<div class="des">-->
+  <span [@fade-text]="state"> {{ this.dim }}</span>
+  <!--</div>-->
+
+  <!--  <div class="des">-->
+
+  <!--    <img height="900px" class="image" [src]="imageUrl" [@fade]="state"  alt="">-->
+
+  <!--  </div>-->
+
+
+
+
+  <!--      </div>-->
+  <div [@fade]="state"  class="image" [ngStyle]="{ 'background-image': 'url('+imageUrl+')'}">
+    <div class="glasses"></div>
+  </div>
+
+  <div class="option">
+
+    <button (click)="goLeft()"  class="toggle-button toggle-button1"><</button>
+    <button (click)="goRigth()" class="toggle-button toggle-button2">></button>
+
+
+    <app-boutton-nav-bar  [ngStyle]="{ transition: 'transform 0.5s easy-in-out',
+                                      transform : 'translateX('+index+'%)',}"  (click)="onSnap(boutton.imageUrl , boutton.subtitle ,boutton.state)" *ngFor="let boutton of boutons" [bouttonModel]="boutton" ></app-boutton-nav-bar>
+
+  </div>
+
+</div>
+
+

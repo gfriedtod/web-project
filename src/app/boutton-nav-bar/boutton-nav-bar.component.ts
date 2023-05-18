@@ -2,11 +2,11 @@ import {Component, Input, OnInit} from '@angular/core';
 import {EventModel} from "../model/Event-model";
 
 @Component({
-  selector: 'app-bouton-nav-bar',
-  templateUrl: './bouton-nav-bar.component.html',
-  styleUrls: ['./bouton-nav-bar.component.css']
+  selector: 'app-boutton-nav-bar',
+  templateUrl: './boutton-nav-bar.component.html',
+  styleUrls: ['./boutton-nav-bar.component.css']
 })
-export class BoutonNavBarComponent implements OnInit{
+export class BouttonNavBarComponent implements OnInit{
 
   imageUrl!: string
   title!: string

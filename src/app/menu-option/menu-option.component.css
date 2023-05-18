@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
+
+button{
+  /*display: flex;*/
+  /*justify-content: center;*/
+  all : unset;
+  font-family: 'Coda', sans-serif;
+  font-size: 30px;
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  margin-left:50px ;
+  /*box-sizing: border-box;*/
+  /*box-sizing: content-box;*/
+  font-weight: bold;
+  transition: transform ease-in-out 0.5s , background-color ease-in-out 0.5s , opacity ease-in 0.2s ;
+
+
+
+}
+
+
+button:active{
+
+
+}
+
+button:hover{
+  background: #f5a747;
+  transform: scale(1.2);
+
+  /*color: #7891dc;*/
+
+
+
+}
+
+.option {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  align-self: flex-end;
+  transition: transform ease-in-out 0.5s;
+ background-color: rgba(245, 167, 71);
+
+}
