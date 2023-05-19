@@ -3,6 +3,7 @@
 
 *{
 
+
   font-family: 'Coda', 'sans-serif';
 
 }
@@ -16,17 +17,22 @@
   height: 100%;
 }
 main{
-  display: flex;
-// background-image: url("/assets/building4.jpg");
-  background-position: left center;
-  background-size: cover;
-//background-origin: ;
-  background-repeat: no-repeat;
-  backdrop-filter: blur(10px);
+  position: absolute;
   height: 100%;
+  overflow: hidden;
+ .home-page{
+   display: flex;
 
 
+   // background-image: url("/assets/building4.jpg");
+   background-position: left center;
+   background-size: cover;
+   //background-origin: ;
+   background-repeat: no-repeat;
+   backdrop-filter: blur(10px);
 
+
+ }
 img{
   width: 100%;
   height: 100%;
@@ -257,36 +263,36 @@ h1{
 
 }
 
-@media screen and ( max-width: 1154px){
-  *{
-    z-index: 2;
-    position: relative;
-  }
-
-  .main-contains{
-    display: flex;
-    flex-direction: column;
-  //overflow: scroll;
-    z-index: 3;
-
-
-  .menu{
-    width: 100%;
-
-  }
-  .ng-container{
-    z-index: 4;
-  img{
-    position: absolute;
-    z-index: 5;
-  }
-}
-
-.sub-contain{
-  z-index: 4;
-}
-
-
-}
-
-}
+//@media screen and ( max-width: 1154px){
+//  *{
+//    z-index: 2;
+//    position: relative;
+//  }
+//
+//  .main-contains{
+//    display: flex;
+//    flex-direction: column;
+//  //overflow: scroll;
+//    z-index: 3;
+//
+//
+//  .menu{
+//    width: 100%;
+//
+//  }
+//  .ng-container{
+//    z-index: 4;
+//  img{
+//    position: absolute;
+//    z-index: 5;
+//  }
+//}
+//
+//.sub-contain{
+//  z-index: 4;
+//}
+//
+//
+//}
+//
+//}
