@@ -7,7 +7,7 @@
   <img class="main-im" [src]="sub_im" alt="">
   <!--  -->
   <div class="mg-comtain"  *ngFor="let im  of image let i = index" >
-    <img  [@carossel]="index" *ngIf="i===index" [src]="im.image" alt="">
+    <img  class="im" [@carossel]="index" *ngIf="i===index" [src]="im.image" alt="">
   </div>
   <div class="main-contains">
 <!--    <div @carossel class="menu">-->
